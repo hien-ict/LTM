@@ -123,12 +123,15 @@ a{
     float: left;
     height: 100%;
 }
-
+.body > .left > .tin::after{
+    clear: both;
+    display: block;
+}
 
 .body > .left > .tin > .content {
     width: 78%;
-    padding: 5px;
-    float: right;
+/*    padding: 5px;*/
+    float: left;
 }
 
 
