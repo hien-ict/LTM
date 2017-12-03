@@ -8,6 +8,10 @@ body {
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*ĐỊNH DẠNG PHẦN ĐẦU*/
 
 .header {
