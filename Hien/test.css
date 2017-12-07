@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,19 +9,23 @@ body {
     margin: auto;
     border: 1px solid black;
     padding: 5px;
+    height: 2000px
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*ĐỊNH DẠNG PHẦN ĐẦU*/
 
 .header {
-/*    padding: 0 10px;*/
+    /*    padding: 0 10px;*/
     width: 100%;
     margin: 10px 0px;
-/*    height: */
+    /*    height: */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -43,13 +47,13 @@ a{
     background-color: saddlebrown;
 }
 
-.header > .content > .hotline > p{
+.header > .content > .hotline > p {
     font-weight: bold;
     color: white;
     text-align: right;
     padding-right: 50px;
     height: 10%;
-/*    margin-bottom: 1%;*/
+    /*    margin-bottom: 1%;*/
 }
 
 .header > .content > img {
@@ -67,20 +71,22 @@ a{
 .header > .content > .menu > ul {
 
     background-color: saddlebrown;
-/*    border: 1px solid blue;*/
+    /*    border: 1px solid blue;*/
 }
 
 
-.header > .content > .menu > ul > li{
+.header > .content > .menu > ul > li {
     list-style: none;
     display: inline-block;
     border-right: 2px solid blue;
     padding: 8px;
 }
-.header > .content > .menu > ul > li:last-child{
+
+.header > .content > .menu > ul > li:last-child {
     border-right: none;
 }
-.header > .content > .menu > ul > li >a{
+
+.header > .content > .menu > ul > li > a {
     text-decoration: none;
     font-weight: bold;
     font-size: +3;
@@ -95,10 +101,11 @@ a{
     width: 98%;
 
 }
+
 .body > .left {
     width: 77%;
-/*    margin-right: 2%;*/
-/*    border: 1px solid black;*/
+    /*    margin-right: 2%;*/
+    /*    border: 1px solid black;*/
     float: left;
 }
 
@@ -109,28 +116,32 @@ a{
 
 
 /*Phần tin đăng BĐS*/
+
 .body > .left > .tin {
     width: 98%;
     padding: 1% 0%;
     height: 100px;
     border-bottom: 1px solid #555;
 }
+
 .body > .left > .tin:last-child {
     border-bottom: none;
 }
-.body > .left > .tin >img {
+
+.body > .left > .tin > img {
     width: 20%;
     float: left;
     height: 100%;
 }
-.body > .left > .tin::after{
+
+.body > .left > .tin::after {
     clear: both;
     display: block;
 }
 
 .body > .left > .tin > .content {
     width: 78%;
-/*    padding: 5px;*/
+    /*    padding: 5px;*/
     float: left;
 }
 
