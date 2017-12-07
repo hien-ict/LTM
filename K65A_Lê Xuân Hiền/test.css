@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 90%;
+    min-width: 800px;
+    margin: auto;
+/*    border: 1px solid red;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background: cyan;
+    color: red;
+}
+
+body > div.header{
+    width: 98%;
+    margin: 1%;
+}
+
+body > div.header > h1 {
+    background-color: aquamarine;
+    color: blue;
+    padding: 2px 0px 15px 2px;
+}
+
+body > div.header > ul{
+    list-style: none;
+    background-color: dodgerblue;
+}
+
+body > div.header > ul > li{
+    display: inline-block;
+    border-right: 1px solid white;
+    padding: 5px 15px;
+}
+
+body > div.header > ul > li > a{
+    color: white;
+}
+
+body > div.wrapper{
+    width: 98%;
+    margin: 1%;
+}
+
+body > div.wrapper > div.block1{
+    
+}
+
+body > div.wrapper > div.block1 > div.block1-1{
+    width: 43%;
+    float: left;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > h2{
+    background-color: aquamarine;
+    color: blue;
+/*    width: 40%;*/
+    display: inline-block;
+    float: left;
+    border-radius: 5px;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > ul{
+    float: right;
+    list-style: none;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > ul > li{
+    display: inline-block;
+    float: left;
+    padding: 2px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > ul > li > a{
+    font-size: 18px;
+    background-color: #eee;
+    color: black;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > img{
+    width: 100%;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > h3{
+    color: aqua;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > p{
+    text-align: justify;
+} 
+
+body > div.wrapper> div.block1 > div.block1-2 {
+    width: 25%;
+    float: left;
+    margin: 0px 1%;
+}
+
+body > div.wrapper> div.block1 > div.block1-2 > h3{
+    color: white;
+    background-color: deepskyblue;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2px 0px 5px 5px;
+}
+
+body > div.wrapper> div.block1 > div.block1-2 > div{
+    border-bottom: 1px dotted gray;
+    padding: 8px 0px;
+}
+
+body > div.wrapper> div.block1 > div.block1-2 > div:last-child{
+    border-bottom: none;
+}
+
+body > div.wrapper> div.block1 > div.block1-2 > div > img{
+    width: 40%;
+    float: left;
+}
+
+body > div.wrapper> div.block1 > div.block1-2 > div > a{
+    width: 59%;
+    float: right;
+    text-align: justify;
+}
+
+body > div.wrapper> div.block1 > div.block1-3{
+    width: 30%;
+    float: right;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo{
+    background: #eee;
+    border-top: 3px solid green;
+    padding: 2%;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > h3{
+    color: red;
+    padding: 5px 0px 10px 15px;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > form{
+    background: #fff;
+    padding: 5px;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > form >input.KQ{
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px 20px;
+    color: white;
+    background: gray;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > form >input.ketqua{
+    background: red;
+    color: white;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > ul{
+    color: red;
+    list-style:square;
+    list-style-position: inside;
+    padding: 5px 10px;
+}
+
+body > div.wrapper> div.block1 > div.block1-3 > div.thamdo > ul > li{
+    padding: 10px 0px;
+}
+
+body > div.wrapper> div.block2{
+    margin: 10px 0px;
+}
+
+body > div.wrapper> div.block2 > div{
+    width: 33%;
+    float: left;
+}
+
+body > div.wrapper> div.block2 > div > h3{
+    background: #eee;
+    color: red;
+    padding: 5px 0px 5px 20px;
+}
+
+body > div.wrapper> div.block2 > div > img{
+    width: 100%;
+    padding: 5px 0px;
+    height: 300px;
+}
+
+body > div.wrapper> div.block2 > div > h4 >a{
+    color: black;
+}
+
+body > div.wrapper> div.block2 > div > ul{
+    color: red;
+    list-style: square;
+    list-style-position: inside;
+    padding: 5px;
+}
+
+body > div.wrapper> div.block2 > div > ul > li{
+    border-top: 1px dotted gray;
+    padding: 10px 0px;
+}
+
+div.clear{
+    clear: both;
+}
+
+div.mid{
+    margin: 0px 0.5%;
+}
+
+body > div.footer{
+    width: 98%;
+    margin: 1%;
+    height: 50px;
+    background: blue;
+    line-height: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+body > div.wrapper > div.block1 > div.block1-1 > ul > li > a.now{
+    background-color:cyan;
+}
