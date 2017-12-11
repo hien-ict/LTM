@@ -418,6 +418,22 @@ a {
     font-weight: bold;
 }
 
+/*BẢNG GIÁ DỰ ÁN*/
+.body > .right > .banggia {
+    width: 100%;
+}
+
+.body > .right > .banggia > h3 {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+
+
+
+
+
+
 
 
 .footer {
