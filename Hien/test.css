@@ -286,7 +286,7 @@ a {
     list-style: none;
     display: inline-block;
     border-right: 2px solid #eee;
-    padding: 8px;
+
 }
 
 .body > .left > .block2 > ul > li:last-child {
@@ -297,12 +297,18 @@ a {
     text-decoration: none;
     font-weight: bold;
     font-size: +3;
+    padding: 8px;
 /*    color: black;*/
+}
+
+.active-menu-tab{
+    color: #36c;
+/*    background-color: darksalmon;*/
 }
 
 .body > .left > .block2 > ul > li:hover{
     color: #36c;
-    background: #ccc;
+/*    background: #ccc;*/
 }
 
 .body > .left > .block2  .block2-1 {
@@ -324,7 +330,7 @@ a {
 
 .body > .left > .block2 .block2-1 > .abc > img {
     width: 100%;
-    height: 100px;
+    height: 130px;
 }
 
 .body > .left > .block2 .block2-1 > .abc > a {
