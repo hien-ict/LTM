@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>BĐS Thuận Thành Land</title>
@@ -46,8 +47,8 @@
         <li><a href="">Trang nhân viên</a></li>
         <li><a href="">Liên hệ</a>
             <ul class="dropdown-content">
-                <li><a href="">Nhà đất</a></li>
-                <li><a href="">Tin tức</a></li>
+                <li><a href="">Đăng kí Bất động sản</a></li>
+                <li><a href="">Tìm kiếm Bất động sản theo yêu cầu</a></li>
                 <li><a href="">Sự kiện</a></li>
             </ul>
         </li>
@@ -162,72 +163,75 @@
             <div class="clear"></div>
 
             <!-- DỰ ÁN NỔI BẬT, CĂN HỘ CHUNG CƯ, CAO CẤP-->
-            <div class="block2">
-                <ul>
-                    <li><a href="">DỰ ÁN NỔI BẬT</a></li>
-                    <li><a href="">CĂN HỘ CAO CẤP</a></li>
-                    <li><a href="">CHUNG CƯ</a></li>
+            <div class="block2" id="tabs-menu">
+                <ul id="menutab">
+                    <li><a id="danb" onclick="showtab(this.id)" class="active-menu-tab">DỰ ÁN NỔI BẬT</a></li>
+                    <li><a id="chcc" onclick="showtab(this.id)">CĂN HỘ CAO CẤP</a></li>
+                    <li><a id="cc" onclick="showtab(this.id)">CHUNG CƯ</a></li>
                 </ul>
-                <div class="block2-1">
-                    <div class="abc">
-                        <img src="../rivercity-1460975987.jpg" alt="">
-                        <a href="">Căn hộ cao cấp The Earntern</a>
+                <div id="tab-content">
+                    <div class="block2-1" id="tab-danb">
+                        <div class="abc">
+                            <img src="../rivercity-1460975987.jpg" alt="">
+                            <a href="">Căn hộ cao cấp The Earntern</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../chung-cu-cao-cap.jpg" alt="">
+                            <a href="">Khu căn hộ cao cấp Silver Star</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../pocked%20garden.jpg" alt="">
+                            <a href="">Khu nghỉ dưỡng Marina Hill</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../khuon-vien-du-an-tura-khang-dien.jpg" alt="">
+                            <a href="">Căn hộ HausNeo</a>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="abc">
-                        <img src="../chung-cu-cao-cap.jpg" alt="">
-                        <a href="">Khu căn hộ cao cấp Silver Star</a>
+
+                    <div class="block2-1 hidden" id="tab-chcc">
+                        <div class="abc">
+                            <img src="../chcc1.jpeg" alt="">
+                            <a href="">Căn hộ cao cấp The Garden</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../chcc2.jpg" alt="">
+                            <a href="">Khu căn hộ cao cấp Silver Star</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../chcc3.jpg" alt="">
+                            <a href="">Căn hộ cao cấp GreenHouse</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../chcc4.jpg" alt="">
+                            <a href="">Căn hộ cao cấp HausNeo</a>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="abc">
-                        <img src="../pocked%20garden.jpg" alt="">
-                        <a href="">Khu nghỉ dưỡng Marina Hill</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../khuon-vien-du-an-tura-khang-dien.jpg" alt="">
-                        <a href="">Căn hộ HausNeo</a>
+
+                    <div class="block2-1 hidden" id="tab-cc">
+                        <div class="abc">
+                            <img src="../cc1.jpg" alt="">
+                            <a href="">Chung cư Nam Trung Yên</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../cc2.jpg" alt="">
+                            <a href="">Chung cư My House</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../cc3.jpg" alt="">
+                            <a href="">Chung cư dành cho quan chức cấp cao</a>
+                        </div>
+                        <div class="abc">
+                            <img src="../cc4.jpg" alt="">
+                            <a href="">Chung cư RichLand</a>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
                 </div>
 
-                <div class="block2-1">
-                    <div class="abc">
-                        <img src="../chcc1.jpeg" alt="">
-                        <a href="">Căn hộ cao cấp The Garden</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../chcc2.jpg" alt="">
-                        <a href="">Khu căn hộ cao cấp Silver Star</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../chcc3.jpg" alt="">
-                        <a href="">Căn hộ cao cấp GreenHouse</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../chcc4.jpg" alt="">
-                        <a href="">Căn hộ cao cấp HausNeo</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="block2-1">
-                    <div class="abc">
-                        <img src="../cc1.jpg" alt="">
-                        <a href="">Chung cư Nam Trung Yên</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../cc2.jpg" alt="">
-                        <a href="">Chung cư My House</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../cc3.jpg" alt="">
-                        <a href="">Chung cư dành cho quan chức cấp cao</a>
-                    </div>
-                    <div class="abc">
-                        <img src="../cc4.jpg" alt="">
-                        <a href="">Chung cư RichLand</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
             </div>
 
             <!-- CẨM NANG, PHONG THỦY, NỘI THẤT, KIẾN THỨC ĐƯỢC QUAN TÂM-->
@@ -312,4 +316,5 @@
 
     <script src="test.js"></script>
 </body>
+
 </html>
