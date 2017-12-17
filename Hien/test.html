@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>BĐS Thuận Thành Land</title>
-    <link rel="shortcut icon" href="../logo.png"\>
+    <link rel="shortcut icon" href="../logo.png" \>
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,7 +18,7 @@
         <!--        Hotline, châm ngôn, menu -->
 
         <div class="hotline">
-            <p>Hotline: 0967206571</p>
+            <marquee behavior="" direction="">Hotline: 0967206571</marquee>
         </div>
         <img src="../banner.png" alt="" class="banner">
         <div class="clear"></div>
@@ -27,7 +27,7 @@
     </div>
 
     <ul class="menu" id="myTopnav">
-        <li class="active"><a href=""><img src="../home-icon.png" alt="" style="height:18px; float: left">&nbsp;&nbsp;Trang chủ</a></li>
+        <li class="menuActive"><a href=""><img src="../home-icon.png" alt="" style="height:18px; float: left">&nbsp;&nbsp;Trang chủ</a></li>
         <li><a href="">Bất động sản</a>
             <ul class="dropdown-content">
                 <li><a href="">Dự án nổi bật</a></li>
@@ -295,24 +295,30 @@
             <!-- CẨM NANG, PHONG THỦY, NỘI THẤT, KIẾN THỨC ĐƯỢC QUAN TÂM-->
             <div class="df">
                 <div class="l">
-                    <p>XU HƯỚNG - CẨM NANG - PHONG THỦY</p>
-                    <div class="b1">
-                        <img src="../new_year-snowman-merry_christmas-snow-trees-scarf-ice.jpg" alt="">
+                    <h3>XU HƯỚNG - CẨM NANG - PHONG THỦY</h3>
+                    <div style="text-align:center; margin: 5px auto">
+                        <span class="dot" onclick="currentSlide2(1)">1</span>
+                        <span class="dot" onclick="currentSlide2(2)">2</span>
+                        <span class="dot" onclick="currentSlide2(3)">3</span>
+                    </div>
+                    <div class="b1 fade">
+                        <img src="../chcc2.jpg" alt="">
                         <p>3 xu hướng trang trí sẽ "lên ngôi" năm 2018</p>
                     </div>
-                    <div class="b2">
-                        <img src="../new_year-snowman-merry_christmas-snow-trees-scarf-ice.jpg" alt="">
+                    <div class="b1 fade">
+                        <img src="../nha%202.jpg" alt="">
                         <p>Ngắm căn nhà xa hoa 39 triệu USD từng là nhà của Michael Jackson</p>
                     </div>
-                    <div class="b3">
-                        <img src="../new_year-snowman-merry_christmas-snow-trees-scarf-ice.jpg" alt="">
+                    <div class="b1 fade">
+                        <img src="../chcc3.jpg" alt="">
                         <p>Thiết kế phòng tắm như spa tại nhà</p>
                     </div>
-                    <div class="clear"></div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
                 </div>
 
                 <div class="r">
-                    <p>KIẾN THỨC QUAN TÂM</p>
+                    <h3>KIẾN THỨC QUAN TÂM</h3>
                     <ul>
                         <li><a href="">Tranh chấp lối đi chung</a></li>
                         <li><a href="">Marketing bất động sản: Làm như thế nào?</a></li>
@@ -332,14 +338,33 @@
         <!--      Tin nổi bật, Đăng kí nhận tin-->
         <div class="right" id="right">
             <div class="tinnoibat">
-                <h3>BẤT ĐỘNG SẢN TIỀM NĂNG</h3>
-                <img src="../nha%201.jpg" alt="">
-                <p>Cho thuê nhà đường Cầu Giấy</p>
-                <div class="clear"></div>
+                <h4>BẤT ĐỘNG SẢN TIỀM NĂNG</h4>
+                <div class="tinhot fade">
+                    <img src="../cc1.jpg" alt="">
+                    <p>Cho thuê nhà đường Cầu Giấy</p>
+                </div>
+                <div class="tinhot fade">
+                    <img src="../cc2.jpg" alt="">
+                    <p>Cho thuê Chung cư</p>
+                </div>
+                <div class="tinhot fade">
+                    <img src="../chcc1.jpeg" alt="">
+                    <p>Cho thuê nhà đường Cầu Giấy</p>
+                </div>
+                <div class="tinhot fade">
+                    <img src="../chcc2.jpg" alt="">
+                    <p>Cho thuê chung cư cao cấp đường Cầu Giấy</p>
+                </div>
+                <div class="tinhot fade">
+                    <img src="../chcc3.jpg" alt="">
+                    <p>Cho thuê nhà đường Cầu Giấy</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <div class="dangkinhantin">
-                <h3>ĐĂNG KÍ NHẬN TIN</h3>
+                <h4>ĐĂNG KÍ NHẬN TIN</h4>
                 <p>Mời bạn để lại email hoặc số điện thoại để được tư vấn và nhận tin miễn phí khi có nhà mới!</p>
                 <input class="text" type="text" value="abcxyz@gmail.com">
                 <input class="submit" type="submit" value="Gửi">
@@ -357,13 +382,17 @@
 
     <div class="footer">
         <div class="left">
-            <p>Văn phòng thường trực tại Số Ngõ 44 Phạm Thận Duật, Mai Dịch, Cầu Giấy, Hà Nội <br>
-                <b>Điện thoại:</b> 0967206571 <br>
-                <b>Email:</b> thuanthanhland@gmail.com</p>
+            <p>Văn phòng thường trực tại Số Ngõ 44 Phạm Thận Duật, Mai Dịch, Cầu Giấy, Hà Nội</p>
+            <p><b>Điện thoại:</b> 0967206571</p>
+            <p><b>Email:</b> thuanthanhland@gmail.com</p>
         </div>
         <div class="right">
-            <p><b>FOLLOW US</b></p>
+            <p><b>FOLLOW US:</b></p>
+            <a href=""><img src="../fb.png" alt=""></a>
+            <a href=""><img src="../dutube.png" alt=""></a>
+            <a href=""><img src="../g+.png" alt=""></a>
         </div>
+        <div class="clear"></div>
         <div class="end">
             <p>Chuyên trang Bất động sản Thuận Thành Land - Công ty TNHH Thuận Thành Land <br> Giấy phép kinh doanh số...
             </p>
