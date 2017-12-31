@@ -591,6 +591,80 @@ a {
 }
 
 
+/*TRANG CON - BẤT ĐỘNG SẢN CHUNG CƯ*/
+
+/*DANH SÁCH CHUNG CƯ*/
+
+.body > .left > .content > .chcc {
+    width: 100%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+}
+
+.body > .left > .content > .chcc:last-child{
+    border-bottom: none;
+}
+
+.body > .left > .content > .chcc > img {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.body > .left > .content > .chcc > .xyz {
+    width: 100%;
+    float: all;
+    padding: 10px;
+    padding-right: 0;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.body > .left > .content > .chcc > .xyz >h3 >a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.body > .left > .content > .chcc > .note {
+    display: inline-block;
+}
+
+.body > .left > .content > .chcc > .note > #text {
+
+}
+
+.body > .left > .content > .chcc > .note > #time {
+}
+
+.body > .left > .content > .chcc > .xyz> p {
+    color: grey;
+    font-size: 16px;
+}
+
+
+
+
+
+.body > .left > .content > h3 {
+/*    color: blue;*/
+    background-color: #eee;
+    padding: 7px;
+    border-left: 5px solid blue;
+    padding-left: 15px;
+}
+
+.body > .left > .stt {
+    list-style: none;
+/*    float: left;*/
+    text-align: center;
+}
+.body > .left > .stt>li{
+    display: inline-block;
+    padding: 10px;
+}
+
+
 
 .footer {
     margin-top: 30px;
