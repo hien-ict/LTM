@@ -6,7 +6,7 @@
 
 body {
     width: 80%;
-    min-width: 600px;
+    /*    min-width: 600px;*/
     margin: auto;
     border: 1px solid black;
     padding: 5px;
@@ -40,13 +40,9 @@ body {
     margin-bottom: 2px;
 }
 
-.header > .hotline > p {
+.header > .hotline > marquee {
     font-weight: bold;
     color: white;
-    text-align: right;
-    padding-right: 50px;
-    height: 10%;
-    /*    margin-bottom: 1%;*/
 }
 
 .header > img.banner {
@@ -104,7 +100,14 @@ ul.menu > li > a {
     height: 19px;
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1165px) {
+    #mobile {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 980px) {
     .menu li:not(:first-child) {
         display: none;
     }
@@ -120,7 +123,7 @@ ul.menu > li > a {
     }
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 980px) {
     .menu.responsive {
         position: -webkit-sticky;
         position: sticky;
@@ -178,11 +181,18 @@ ul.menu > li > a {
     background: /*    border: 1px solid black;*/
 }
 
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #left,
+    #right {
+        width: 100%;
+    }
+}
+
 .body > .left {
     width: 70%;
     margin-right: 2%;
     height: 50%;
-    /*    border: 1px solid black;*/
     float: left;
 }
 
@@ -230,7 +240,7 @@ ul.menu > li > a {
 
 a {
     text-decoration: none;
-/*    color: brown;*/
+    /*    color: brown;*/
 }
 
 /*LỌC TIN ĐĂNG*/
@@ -298,29 +308,34 @@ a {
     font-weight: bold;
     font-size: +3;
     padding: 8px;
-/*    color: black;*/
+    /*    color: black;*/
 }
 
-.active-menu-tab{
+.active-menu-tab {
     color: #36c;
-/*    background-color: darksalmon;*/
+    /*    background-color: darksalmon;*/
 }
 
-.body > .left > .block2 > ul > li:hover{
+.body > .left > .block2 > ul > li:hover {
     color: #36c;
-/*    background: #ccc;*/
+    /*    background: #ccc;*/
 }
 
-.body > .left > .block2  .block2-1 {
+.body > .left > .block2 .block2-1 {
     width: 100%;
     margin-top: 10px;
 }
 
-.body > .left > .block2  .block2-1 > .abc {
+.body > .left > .block2 .block2-1 > .abc {
     width: 24%;
-    margin-right: 1%;
+    margin-right: 1.333333333333%;
     display: block;
     float: left;
+}
+
+.body > .left > .block2 .block2-1 > .abc:nth-child(4),
+.body > .left > .block2 .block2-1 > .abc:nth-child(9) {
+    margin-right: 0;
 }
 
 .body > .left > .block2 .block2-1 > .abc:last-child {
@@ -342,94 +357,93 @@ a {
 
 .body > .left > df {
     width: 100%;
-    height: 300px;
+    /*    height: 300px;*/
 }
 
 .body > .left > .df > .l {
-    width: 69%;
-    margin-right: 1%;
-    height: 300px;
+    width: 59%;
+    margin-right: 6%;
+    /*    height: 300px;*/
     float: left;
-}
-
-.body > .left > .df > .l > p {
-    font-weight: bold;
+    position: relative;
 }
 
 .body > .left > .df > .l > .b1 {
-    width: 60%;
-    margin-right: 1%
+    /*    width: 100%;*/
 }
 
 .body > .left > .df > .l > .b1 > img {
     width: 100%;
-    position: relative;
-    float: left;
+    height: 300px;
 }
 
 .body > .left > .df > .l > .b1 > p {
+    text-align: center;
+    color: aqua;
+}
+
+.body > .left > .df > .l > .prev,
+.next {
+    cursor: pointer;
     position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
-.body > .left > .df > .l > .b2 {
-    width: 39%;
-    height: 50%;
-    border-bottom: 1px solid #eee;
-    float: right;
+.body > .left > .df > .l > .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.body > .left > .df > .l > .b2 > img {
-    width: 30%;
-    float: left;
+.dot {
+    font-size: 12px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.body > .left > .df > .l > .b2 > p {
-    width: 68%;
-    margin-left: 2%;
-    text-align: justify;
-    float: right;
-}
-
-.body > .left > .df > .l > .b3 {
-    width: 39%;
-    height: 50%;
-    float: right;
-}
-
-.body > .left > .df > .l > .b3 > img {
-    width: 30%;
-    float: left;
-}
-
-.body > .left > .df > .l > .b3 > p {
-    width: 68%;
-    margin-left: 2%;
-    text-align: justify;
-    float: right;
+.active,
+.dot:hover {
+    background-color: aqua;
 }
 
 /*KIẾN THỨC ĐƯỢC QUAN TÂM*/
 
 .body > .left > .df > .r {
-    width: 30%;
+    width: 35%;
     float: right;
     /*    height: 300px;*/
 }
 
-.body > .left > .df > .r > p {
+.body > .left > .df h3 {
     font-weight: bold;
     border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding: 5px 0px 7px 10px;
+    border-left: 3px ridge blue;
 }
 
 .body > .left > .df > .r > ul {
-    padding: 7px 0;
+/*    padding: 7px 0;*/
     display: block;
 
 }
 
 .body > .left > .df > .r > ul > li {
     list-style: disc;
-    list-style: inside;
+    list-style-position: inside;
     border-bottom: 1px dashed #999;
     padding: 5px;
 }
@@ -450,30 +464,93 @@ a {
     margin-bottom: 10px;
     width: 100%;
     display: block;
-    position: relative;
     z-index: 0;
+    position: relative;
 }
 
-.body > .right > .tinnoibat > img {
-    width: 100%;
-    float: left;
-}
-
-.body > .right > .tinnoibat > h3 {
+.body > .right > .tinnoibat > h4 {
     color: white;
     background: #009966;
     text-align: center;
     border-radius: 7px 7px 0 0;
-    padding: 5px;
+    padding: 10px;
+
 }
 
-.body > .right > .tinnoibat > p {
+.body > .right > .tinnoibat > .tinhot {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: lightcyan;
+}
+
+.body > .right > .tinnoibat > .tinhot > img {
+    width: 100%;
+    margin-bottom: -5px;
+    height: 300px;
+}
+
+.body > .right > .tinnoibat > .tinhot > p {
     position: absolute;
-    opacity: 0.5;
-    left: 0;
-    top: 0.5;
+    bottom: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with transparency */
+    color: #f1f1f1;
+    width: 96%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+.body > .right > .tinnoibat > .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.body > .right > .tinnoibat > .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
 
 .body > .right > .dangkinhantin {
     width: 100%;
@@ -484,7 +561,7 @@ a {
     display: block;
 }
 
-.body > .right > .dangkinhantin > h3 {
+.body > .right > .dangkinhantin > h4 {
     background: #009966;
     color: white;
     text-align: center;
@@ -513,151 +590,59 @@ a {
     font-weight: bold;
 }
 
-/*BẢNG GIÁ DỰ ÁN*/
-.body > .right > .gia > h3 {
-    margin: 10px 0;
-    padding: 10px 0;
-    border-bottom: 1px solid blue;
-    color: dimgrey;
-}
-.body > .right > .gia > select {
-    width: 100%;
-    background: #eee;
-}
-
-.body > .right > .gia > #price > option {
-    padding: 7px;
-    font-size: 16px;
-}
-
-.body > .right > .gia > table {
-    width: 100%;
-}
-
-
-.body > .right > .gia > table > tr {
-    margin-bottom: 10px;
-}
-
-.body > .right > .gia > table > tr > th {
-    background: #eee;
-    padding: 7px;
-}
-
-.body > .right > .gia > table > tr > td > a {
-    color: black;
-}
-
-/*TRANG CON - BẤT ĐỘNG SẢN CHUNG CƯ*/
-
-/*DANH SÁCH CHUNG CƯ*/
-
-.body > .left > .content > .chcc {
-    width: 100%;
-    border-bottom: 1px dashed black;
-    padding-bottom: 10px;
-}
-
-.body > .left > .content > .chcc:last-child{
-    border-bottom: none;
-}
-
-.body > .left > .content > .chcc > img {
-    width: 30%;
-    float: left;
-    padding: 10px;
-    padding-left: 0;
-}
-
-.body > .left > .content > .chcc > .xyz {
-    width: 100%;
-    float: all;
-    padding: 10px;
-    padding-right: 0;
-    text-align: justify;
-    box-sizing: border-box;
-}
-
-.body > .left > .content > .chcc > .xyz >h3 >a{
-    text-decoration: none;
-    color: dodgerblue;
-}
-
-.body > .left > .content > .chcc > .note {
-    display: inline-block;
-}
-
-.body > .left > .content > .chcc > .note > #text {
-
-}
-
-.body > .left > .content > .chcc > .note > #time {
-}
-
-.body > .left > .content > .chcc > .xyz> p {
-    color: grey;
-    font-size: 16px;
-}
-
-
-
-
-
-.body > .left > .content > h3 {
-/*    color: blue;*/
-    background-color: #eee;
-    padding: 7px;
-    border-left: 5px solid blue;
-    padding-left: 15px;
-}
-
-.body > .left > .stt {
-    list-style: none;
-/*    float: left;*/
-    text-align: center;
-}
-.body > .left > .stt>li{
-    display: inline-block;
-    padding: 10px;
-}
-
-
-
-
-
 
 
 .footer {
+    margin-top: 30px;
     width: 100%;
     /*    height: 5000px;*/
-    background: brown;
-    color: white;
+    background: #f4f5f4;
+    color: black;
     font-size: 13px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px inset gray;
 }
 
 .footer > .left {
     width: 49%;
     margin-right: 2%;
     box-sizing: border-box;
-    padding-left: 7px;
+/*    padding-left: 7px;*/
     float: left;
+}
+
+.footer > .left > p{
+/*    height: 18px;*/
+    line-height: 18px;
 }
 
 .footer > .right {
     width: 49%;
     float: right;
 }
+.footer > .right img{
+    height: 30px;
+}
 
 .footer > .end {
+    padding-top: 10px;
+    text-align: center;
     width: 100%;
 }
 
 .clear {
     clear: both;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.active{
+
+.menuActive {
     display: block;
+}
+
+a {
+    cursor: pointer;
 }
