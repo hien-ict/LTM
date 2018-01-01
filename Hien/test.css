@@ -835,13 +835,7 @@ a {
   background-color: black;
 }
 
-.tin_hot {
-    position: relative;
-/*    max-width: 600px;*/
-    margin: 0 auto;
-/*    padding: 2%;*/
-    background-color: lightcyan;
-}
+
 .tin_dang .modal img{
     width: 90%;
 /*    position: relative;*/

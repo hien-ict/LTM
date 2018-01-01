@@ -52,7 +52,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </ul>
 
-    <div class="body" >
+    <div class="body">
         <div class="left" id="left">
             <div class="tin_dang">
                 <div class="show_anh" id="unModal">
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="modal" id="myModal">
-                   <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
                     <img src="../Images/nha%201.jpg" alt="" class="tin_hot fade">
                     <img src="../Images/nha%202.jpg" alt="" class="tin_hot fade">
                     <img src="../Images/nha%203.jpg" alt="" class="tin_hot fade">
@@ -149,6 +149,67 @@
     <div class="clear"></div>
 
 
-    <script src="test.js"></script>
+    <script>
+        var slideIndex = 1;
+
+        function plusSlides(n) {
+            clearTimeout(timer);
+            showSlides(slideIndex += n);
+            timer = setInterval("plusSlides(1)", 5000)
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("tinhot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        showSlides(slideIndex);
+        timer = setInterval("plusSlides(1)", 5000)
+
+        //Light_box
+        var slide_Index = 1;
+
+        function plusSlides3(n) {
+            slide_Index += n
+            showSlides3(slide_Index);
+        }
+
+        function showSlides3(n) {
+            var i;
+            var slides = document.getElementsByClassName("tin_hot");
+            console.log(slides);
+            if (n > slides.length) {
+                slide_Index = 1;
+            }
+            if (n < 1) {
+                slide_Index = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                console.log("ok");
+            };
+            slides[slide_Index - 1].style.display = "block";
+        }
+
+
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+            showSlides3(slide_Index);
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
 </body>
 </html>

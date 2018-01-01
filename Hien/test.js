@@ -95,7 +95,8 @@ timer2 = setInterval("plusSlides2(1)", 6000)
 var slide_Index = 1;
 
 function plusSlides3(n) {
-    showSlides3(slide_Index += n);
+    slide_Index += n
+    showSlides3(slide_Index);
 }
 
 function showSlides3(n) {
@@ -103,14 +104,15 @@ function showSlides3(n) {
     var slides = document.getElementsByClassName("tin_hot");
     console.log(slides);
     if (n > slides.length) {
-        slide_Index = 1
+        slide_Index = 1;
     }
     if (n < 1) {
-        slide_Index = slides.length
+        slide_Index = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-    }
+        console.log("ok");
+    };
     slides[slide_Index - 1].style.display = "block";
 }
 
