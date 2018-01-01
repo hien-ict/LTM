@@ -232,11 +232,23 @@ ul.menu > li > a {
     float: right;
 }
 
-.body > .left > .tin > .content > .priceandtime > .price {
-    /*
-    color: brown;
-    font-size: 14px;
-*/
+.body > .left > .tin > .content > .priceandtime > div {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.body > .left > .tin > .content > .priceandtime > span {
+    color: #999;
+    font-size: 13px;
+}
+
+.body > .left > .tin > .content > .priceandtime > p {
+    color: white;
+    background-color:yellowgreen;
+
 }
 
 a {
@@ -808,4 +820,123 @@ a {
 .body > .left > .tin_dang  .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+
+/*TRANG CON - BẤT ĐỘNG SẢN CHUNG CƯ*/
+
+/*DANH SÁCH CHUNG CƯ*/
+
+.body > .left > .content > .chcc {
+    width: 100%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+}
+
+.body > .left > .content > .chcc:last-child{
+    border-bottom: none;
+}
+
+.body > .left > .content > .chcc > img {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.body > .left > .content > .chcc > .xyz {
+    width: 100%;
+    float: all;
+    padding: 10px;
+    padding-right: 0;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.body > .left > .content > .chcc > .xyz >h3 >a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.body > .left > .content > .chcc > .xyz > span {
+    font-size: 13px;
+    font-style: oblique;
+    display: block;
+    margin: 7px 0;
+}
+
+.body > .left > .content > .chcc > .xyz> p {
+    color: grey;
+    font-size: 16px;
+}
+
+
+
+
+
+.body > .left > .content > h3 {
+/*    color: blue;*/
+    background-color: #eee;
+    padding: 7px;
+    border-left: 5px solid blue;
+    padding-left: 15px;
+}
+
+.body > .left > .stt {
+    list-style: none;
+/*    float: left;*/
+    text-align: center;
+}
+.body > .left > .stt>li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.gia {
+    width: 100%;
+}
+
+.gia > h3 {
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    background-color: green;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.gia > select {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+/*    margin-bottom: 1px;*/
+    width: 100%;
+}
+
+.gia > table {
+    width: 100%;
+}
+
+.gia > table > tr{
+/*    border-bottom: 1px solid black;*/
+}
+
+#cotA {
+    width: 60%;
+    font-size: 14px;
+    padding: 3px;
+}
+
+#cotA > a {
+    color: black;
+    text-align: justify;
+}
+
+
+#cotB {
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
 }
