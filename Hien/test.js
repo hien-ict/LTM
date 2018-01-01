@@ -9,7 +9,7 @@ function myFunction() {
 
 function showtab(tabname) {
     hiddenTabs();
-    document.getElementById("tab-" + tabname).className = "block2-1 active";
+    document.getElementById("tab-" + tabname).className = "block2-1";
     document.getElementById(tabname).className = tabname + " active-menu-tab";
 }
 

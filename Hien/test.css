@@ -172,6 +172,7 @@ ul.menu > li > a {
 
 .menu li:hover .dropdown-content {
     display: block;
+    white-space: nowrap;
 }
 
 /*ĐỊNH DẠNG PHẦN BODY*/
@@ -645,4 +646,166 @@ a {
 
 a {
     cursor: pointer;
+}
+
+
+/*TRANG CON: TRANG NHAN VIEN*/
+.body .left .hoat_dongnv {
+	width: 235px; height: 30px;
+    background-color: #009900;
+    color: white;
+    font-weight: bold;
+    padding: auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family:Arial;
+    border-top-right-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+.body .left .ds_hoat_dong{
+    width: 100%;
+/*    border-top: 1px solid #ccc;*/
+}
+.body .left .ds_hoat_dong ul{
+	list-style: none;
+/*	margin-top: 0px;
+*/
+    list-style-position: inside;
+}
+.body .left .ds_hoat_dong ul li{
+/*	margin: 20px 0px 0px 0px;*/
+/*    width: 600px;*/
+/*    margin-left: -40px;*/
+    border-bottom: 1px dotted gray;
+    padding: 15px 10px;
+}
+.body .left .ds_hoat_dong ul .cuoi_ds{
+	border: none;
+}
+
+.body .left .ds_hoat_dong ul li .img{
+    width: 25%;
+    margin-right: 1%;
+    float: left;
+/*    height: 150px;*/
+}
+.body .left .ds_hoat_dong ul li a{
+	width: 74%;
+    float: left;
+    line-height: 27px;
+    text-align: justify;
+}
+.body .left .ds_hoat_dong ul li a:hover{
+	color: red;
+}
+
+.body .right #tintuc{
+	width: 100%;
+    height: 30px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    color: white;
+    font-family: Arial; font-weight: bold;
+    background-color: #009900;
+/*        padding-left: 120px;*/
+    padding-top: 15px;
+    text-align: center;
+}
+.body .right .tuyendung{
+    margin-bottom: 25px;
+}
+.body .right ul{
+	list-style: circle;
+    border-top: 10px;
+/*    width: 257px;*/
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+
+}
+.body .right ul li{
+/*	width: 260px;*/
+/*    margin-left: -20px;*/
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+    margin: 0 10px;
+}
+.body .right ul .cuoi_tuyen_dung{
+	border: none;
+}
+.body .right ul li a{
+	text-decoration: none;
+}
+.body .right ul li a:hover{
+	color: red;
+}
+.body .right .lien_he table{
+	border: 1px solid #ccc;
+	font-size: 14px;
+    width: 100%;
+}
+.body .right .lien_he table tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+.body .right .lien_he table tr td{
+	width: 50px; height: 50px;
+}
+.body .right .lien_he table .phai_bang{
+	width: 237px;
+}
+.body .right .lien_he table td i{
+	margin-left: 15px;
+
+}
+
+/*TRANG CON: TRANG TIN NHA*/
+.tin_dang{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.tin_dang .show_anh{
+    position: relative;
+}
+
+.tin_dang img{
+    width: 100%;
+/*    position: relative;*/
+    height: 400px;
+}
+.tin_dang h3{
+    margin: 20px 0;
+}
+.tin_dang .show_gia{
+    margin-bottom: 20px;
+}
+.tin_dang .show_S{
+    margin: 20px 0;
+}
+.tin_dang .show_diachi p{
+    line-height: 35px;
+}
+
+.body > .left > .tin_dang  .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.body > .left > .tin_dang  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
