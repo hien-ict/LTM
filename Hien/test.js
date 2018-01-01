@@ -1,3 +1,4 @@
+//Menu tab
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "menu") {
@@ -23,6 +24,9 @@ function hiddenTabs() {
         tabs[i].className = "hidden";
     }
 }
+
+
+//SlideSHow
 var slideIndex = 1;
 
 function plusSlides(n) {
