@@ -231,11 +231,23 @@ ul.menu > li > a {
     float: right;
 }
 
-.body > .left > .tin > .content > .priceandtime > .price {
-    /*
-    color: brown;
-    font-size: 14px;
-*/
+.body > .left > .tin > .content > .priceandtime > div {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.body > .left > .tin > .content > .priceandtime > span {
+    color: #999;
+    font-size: 13px;
+}
+
+.body > .left > .tin > .content > .priceandtime > p {
+    color: white;
+    background-color:yellowgreen;
+
 }
 
 a {
