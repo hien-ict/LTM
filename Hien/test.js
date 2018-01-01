@@ -69,7 +69,7 @@ function currentSlide2(n) {
 function showSlides2(n) {
     var i;
     var slides = document.getElementsByClassName("b1");
-      var dots = document.getElementsByClassName("dot");
+    var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex2 = 1
     }
@@ -79,12 +79,47 @@ function showSlides2(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
     slides[slideIndex2 - 1].style.display = "block";
-      dots[slideIndex2-1].className += " active";
+    dots[slideIndex2 - 1].className += " active";
 }
 
 showSlides2(slideIndex2);
 timer2 = setInterval("plusSlides2(1)", 6000)
+
+
+//Lightbox
+
+var slide_Index = 1;
+
+function plusSlides3(n) {
+    showSlides3(slide_Index += n);
+}
+
+function showSlides3(n) {
+    var i;
+    var slides = document.getElementsByClassName("tin_hot");
+    console.log(slides);
+    if (n > slides.length) {
+        slide_Index = 1
+    }
+    if (n < 1) {
+        slide_Index = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slide_Index - 1].style.display = "block";
+}
+
+
+function openModal() {
+    document.getElementById('myModal').style.display = "block";
+    showSlides3(slide_Index);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}

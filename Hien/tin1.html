@@ -55,12 +55,21 @@
     <div class="body" >
         <div class="left" id="left">
             <div class="tin_dang">
-                <div class="show_anh">
-                    <img src="../Images/nha%201.jpg" alt="" class="tinhot fade">
-                    <img src="../Images/nha%202.jpg" alt="" class="tinhot fade">
-                    <img src="../Images/nha%203.jpg" alt="" class="tinhot fade">
+                <div class="show_anh" id="unModal">
+                    <img src="../Images/nha%201.jpg" alt="" class="tinhot fade" onclick="openModal()">
+                    <img src="../Images/nha%202.jpg" alt="" class="tinhot fade" onclick="openModal()">
+                    <img src="../Images/nha%203.jpg" alt="" class="tinhot fade" onclick="openModal()">
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="modal" id="myModal">
+                   <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <img src="../Images/nha%201.jpg" alt="" class="tin_hot fade">
+                    <img src="../Images/nha%202.jpg" alt="" class="tin_hot fade">
+                    <img src="../Images/nha%203.jpg" alt="" class="tin_hot fade">
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
                 </div>
 
                 <h3>Nhà đường TA16, Thới An, Q12 có 1 Pk,3 PN</h3>
