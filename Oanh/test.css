@@ -638,15 +638,11 @@ a {
     color: dodgerblue;
 }
 
-.body > .left > .content > .chcc > .note {
-    display: inline-block;
-}
-
-.body > .left > .content > .chcc > .note > #text {
-
-}
-
-.body > .left > .content > .chcc > .note > #time {
+.body > .left > .content > .chcc > .xyz > span {
+    font-size: 13px;
+    font-style: oblique;
+    display: block;
+    margin: 7px 0;
 }
 
 .body > .left > .content > .chcc > .xyz> p {

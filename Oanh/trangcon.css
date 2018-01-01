@@ -1,0 +1,48 @@
+.gia {
+    width: 100%;
+}
+
+.gia > h3 {
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    background-color: green;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.gia > select {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+/*    margin-bottom: 1px;*/
+    width: 100%;
+}
+
+.gia > table {
+    width: 100%;
+}
+
+.gia > table > tr{
+/*    border-bottom: 1px solid black;*/
+}
+
+#cotA {
+    width: 60%;
+    font-size: 14px;
+    padding: 3px;
+}
+
+#cotA > a {
+    color: black;
+    text-align: justify;
+}
+
+
+#cotB {
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+}
